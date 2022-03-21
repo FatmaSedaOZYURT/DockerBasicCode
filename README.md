@@ -7,7 +7,7 @@ Docker hub dan bir image çekmemize yardımcı olacaktır. Image dosyasını ind
 Docker üzerinde bulunan tüm image'leri listeler.
 
 <h1>docker run ...</h1>
-İndirilecek olan image dosyasını önce localde arar varsa çalıştırır yoksa önce indirir sonra çalıştırır.
+İndirilecek olan image dosyasını önce localde arar varsa çalıştırır yoksa indirme işlemi yapar sonra çalıştırır.
 Bir konteynara isim verip çalıştırana dek her çalıştırmada, farklı isimler atayacaktır.
 
 <h1>docker run -it ubuntu</h1>
