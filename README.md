@@ -21,11 +21,14 @@ Ayakta olan konteynerları listeler.
 <h1>docker ps -a / docker ps --all / docker container ls -a</h1>
 Yapmış olduğumuz konteyner geçmiş hareketlerini gösterir.
 
+<h1>docker container ls -aq</h1>
+<p>Konteynerların id sini yazdırır.</p>
+
 <h1>docker run --name [Verilecekİsim] [ImageAdı]</h1>
 <i>Örnek: </i>  docker run --name bash_ubuntu ubuntu
 <p>Yukarıdaki kod ubuntu image'ini bash_ubuntu ismiyle değiştirir.</p>
 
-<h1>docker start [konteynerAdı]<h1>
+<h1>docker start [konteynerAdı]</h1>
 <i>Örnek: </i>  docker start bash_ubuntu
 <p>bash_ubuntu konteynerı ayağa kaldırıldı.</p>
   
@@ -35,3 +38,11 @@ Yapmış olduğumuz konteyner geçmiş hareketlerini gösterir.
 Konteyner adı yerine, CONTAINER ID de yazılabilir unique olduğu için kullanılabilmektedir. 
   <p>CONTAINER ID : cac722f54f30 => docker stop ca</p>
   yazmak yeterli olabilir.
+
+<h1>docker rm [konteynerAdı]/[konteynerID]</h1>
+<i>Örnek: </i> docker rm kind_northcutt
+<p>Örnekteki gibi veya id sini girerek konteynerı silebiliriz.</p>
+<p>Veya idleri çoklu vereke de silme işlemi gerçkleştirilebilir. <i>Örnek: </i> docker rm 98 cm 0u</p>
+<h2>Hepsini silmek için: docker container rm $(docker container ls -aq)</h2>
+Bu kod tüm konteynerları siler.
+
