@@ -27,6 +27,7 @@ Yapmış olduğumuz konteyner geçmiş hareketlerini gösterir.
 <h1>docker run --name [Verilecekİsim] [ImageAdı]</h1>
 <i>Örnek: </i>  docker run --name bash_ubuntu ubuntu
 <p>Yukarıdaki kod ubuntu image'ini bash_ubuntu ismiyle değiştirir.</p>
+Yeni bir instance olarak çalışır.
 
 <h1>docker start [konteynerAdı]</h1>
 <i>Örnek: </i>  docker start bash_ubuntu
